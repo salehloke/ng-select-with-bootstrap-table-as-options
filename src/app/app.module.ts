@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   imports: [
@@ -14,7 +15,7 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    // NgSelectModule,
+    NgSelectModule,
   ],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
