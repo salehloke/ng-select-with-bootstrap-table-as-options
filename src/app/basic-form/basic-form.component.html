@@ -12,14 +12,15 @@
             formControlName="ruleList"
             bindValue="ruleCode"
             bindLabel="ruleName"
-            multiple="true"
+            [multiple]="true"
             [closeOnSelect]="false"
             (add)="onAddRule($event)"
             [selectableGroupAsModel]="false"
           >
             <ng-template ng-option-tmp let-item="item" let-search="searchTerm">
               <div>
-                <span [ngOptionHighlight]="search">{{ item.ruleName }}</span>
+                <!-- <span [ngOptionHighlight]="search">{{ item.ruleName }}</span> -->
+                <span>{{ item.ruleName }}</span>
               </div>
               <small><b>Rule Type:</b> {{ item.description }} </small>
               <table class="table table-bordered table-sm">
